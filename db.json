@@ -1,0 +1,34 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Nintendo Switch 2",
+      "marca": "Nintendo",
+      "categoria": "Consolas",
+      "precio": 549990,
+      "descripcion": "Consola híbrida de nueva generación, con pantalla mejorada y mayor potencia gráfica.",
+      "imagen": "/images/nintendo-switch-2.avif",
+      "isDefault": true
+    },
+    {
+      "id": 2,
+      "nombre": "Control Inalámbrico Ultimate 2C",
+      "marca": "8BitDo",
+      "categoria": "Periféricos",
+      "precio": 39990,
+      "descripcion": "Control inalámbrico compatible con Switch, PC y Android, con joysticks Hall y gatillos ajustables.",
+      "imagen": "/images/8bitdo-control.avif",
+      "isDefault": true
+    },
+    {
+      "nombre": "Leyendas Pokémon Arceus",
+      "marca": "nintendo",
+      "categoria": "juego",
+      "precio": 60000,
+      "descripcion": "Juego culiao bueno ",
+      "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/d7/latest/20210526132431/Car%C3%A1tula_Leyendas_Pok%C3%A9mon_Arceus.png/800px-Car%C3%A1tula_Leyendas_Pok%C3%A9mon_Arceus.png",
+      "isDefault": false,
+      "id": 3
+    }
+  ]
+}
