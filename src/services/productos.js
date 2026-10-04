@@ -1,20 +1,10 @@
-import api from './api'
+import productosApi from './productos.api'
+import productosLocal from './productos.local'
 
-export default {
-  getAll(params = {}) {
-    // json-server soporta filtros por query string, ej: ?categoria=Audio
-    return api.get('/productos', { params })
-  },
-  getById(id) {
-    return api.get(`/productos/${id}`)
-  },
-  create(producto) {
-    return api.post('/productos', producto)
-  },
-  update(id, producto) {
-    return api.put(`/productos/${id}`, producto)
-  },
-  remove(id) {
-    return api.delete(`/productos/${id}`)
-  }
-}
+// En desarrollo (npm run serve) se usa siempre la API real (Axios + json-server),
+// tal como pide la consigna del módulo. Solo la build publicada en GitHub Pages
+// (VUE_APP_USE_LOCAL_DATA=true en .env.production) usa el modo local/demo,
+// porque GitHub Pages no puede correr un servidor como json-server.
+const usarDatosLocales = process.env.VUE_APP_USE_LOCAL_DATA === 'true'
+
+export default usarDatosLocales ? productosLocal : productosApi
